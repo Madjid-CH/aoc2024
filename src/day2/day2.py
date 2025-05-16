@@ -19,6 +19,7 @@ def is_safe(report):
 def no_gap_bigger_then_3(report):
     return check_report(report, lambda x, y: abs(x - y) > 3)
 
+
 def is_strictly_monotonic(report):
     strictly_increasing = check_report(report, lambda x, y: x <= y)
     strictly_decreasing = check_report(report, lambda x, y: x >= y)
@@ -54,6 +55,7 @@ def is_safe_with_dampener(report: list):
 
     return False
 
-if __name__ == '__main__':
-    with open("input", 'r') as f:
+
+if __name__ == "__main__":
+    with open("input", "r") as f:
         print(count_safe_reports_with_dampener(f.read()))
