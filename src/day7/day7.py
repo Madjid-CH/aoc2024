@@ -1,5 +1,5 @@
 import math
-from itertools import product
+from itertools import product, combinations_with_replacement
 
 
 def total_calibration(input_):

@@ -95,5 +95,3 @@ def test_place_antinodes():
             (11, 11),
         },
     }
-
-
